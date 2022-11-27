@@ -8,12 +8,12 @@ def give_int(input_string):
         except:
             print('Попробуйте еще раз. Вы ввели не число')
 
-n = give_int("Введите число N: ")
-numbers = []
-for i in range(1, n+1):
+namber = give_int("Введите число N: ")
+numbers_list = []
+for i in range(1, namber+1):
     if i == 1:
-        numbers.append(i)
+        numbers_list.append(i)
     else:
-        new_element = numbers[i-2]*i
-        numbers.append(new_element)
-print (numbers)
+        new_element = numbers_list[i-2]*i
+        numbers_list.append(new_element)
+print (f"Набор произведений чисел от 1 до {namber}: {numbers_list}")
