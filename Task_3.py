@@ -18,7 +18,7 @@ rand_list = []
 new_list = []
 for i in range(n):
     rand_list.append(random.randint(-100,100))
-    if rand_list[i] > 0:
+    if rand_list[i] >= 0:
        new_list.append(rand_list[i]) 
     else:
         new_list.append(rand_list[i])
