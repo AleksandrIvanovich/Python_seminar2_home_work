@@ -10,7 +10,7 @@ def give_int(input_string):
             num = float(input(input_string))
             return num
         except:
-            print('Попробуйте еще раз. Вы ввели не число!')
+            print('Попробуйте еще раз. Вы ввели число некорректно!')
 
 num = give_int('Введите десятичное число (через точку):\n')
 numbers_string = str(num)
